@@ -5,6 +5,8 @@
   }
   body {
     font-family: sans-serif;
+    background-size: cover;
+    background-image: url(./photo.jpeg);
   }
   
   nav {
@@ -29,16 +31,22 @@
   .landing {
       height: 90vh;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      justify-content: left;
       align-items: center;
   }
 
 .landing h1 {
-    margin: 100px;
+    margin-top: 100px;
+    
     font-size: 50px;
     color: #ae5fce;
 }
 
+footer{
+    min-height: 15vh;
+    background-color: #5b78c7;
+}
 @media screen and (max-width:768px)
 {
     .line{
@@ -92,6 +100,13 @@ transition: all 0.5s ease 0.2s;
     .nav-links li:nth-child(3){
         transition: all 0.5s ease 0.6s;
     }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.8s;
+    }
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease 1s;
+    }
+    
     li.fade{
         opacity: 1;
     }
